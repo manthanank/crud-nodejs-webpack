@@ -1,4 +1,6 @@
-const API_URL = "http://localhost:3000/api/items";
+const { request } = require("express");
+
+const API_URL = request.protocol + "://" + request.get("host") + "/api/items";
 
 document.addEventListener("DOMContentLoaded", () => {
   const addForm = document.querySelector("#addForm");
