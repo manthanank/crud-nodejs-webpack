@@ -1,4 +1,4 @@
-const API_URL = window.location.hostname.includes("localhost") ? "http://localhost:5000/items" : "https://crud-nodejs-webpack.vercel.app/items";
+const API_URL = window.location.hostname.includes("localhost") ? "http://localhost:5000/api/items" : "https://crud-nodejs-webpack.vercel.app/api/items";
 
 document.addEventListener("DOMContentLoaded", () => {
   const addForm = document.querySelector("#addForm");
