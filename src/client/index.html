@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App</title>
+</head>
+<body>
+    <h1>CRUD App</h1>
+    
+    <form id="addForm">
+        <h2>Add Item</h2>
+        <input type="text" name="name" placeholder="Item name" required>
+        <button type="submit">Add</button>
+    </form>
+
+    <form id="editForm" style="display: none;">
+        <h2>Edit Item</h2>
+        <input type="text" name="name" placeholder="Item name" required>
+        <input type="hidden" name="id">
+        <button type="submit">Update</button>
+        <button type="button" onclick="cancelEdit()">Cancel</button>
+    </form>
+
+    <ul id="items"></ul>
+</body>
+</html>
