@@ -1,6 +1,4 @@
-const { request } = require("express");
-
-const API_URL = request.protocol + "://" + request.get("host") + "/api/items";
+const API_URL = window.location.hostname.includes("localhost") ? "http://localhost:5000/items" : "https://crud-nodejs-webpack.vercel.app/items";
 
 document.addEventListener("DOMContentLoaded", () => {
   const addForm = document.querySelector("#addForm");
